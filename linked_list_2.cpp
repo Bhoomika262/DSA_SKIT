@@ -50,6 +50,7 @@ int main()
     cout<<"Enter 1 for forward traversing\n";
     cout<<"Enter 2 for backward traversing\n";
     cout<<"Enter 3 for insertion\n";
+    cout<<"Enter 4 for deletion";
     cout<<"Enter the choice: ";
     cin>>ch;
     
