@@ -6,7 +6,7 @@ struct node
 {
     int data;
     struct node *next;
-    struct node *prev;
+    struct node *prev; 
     struct node *ptr;
 };
 typedef struct node node;
@@ -92,7 +92,7 @@ void insert()
 
     if(pos==1)
     {
-        temp->next=start;
+        temp->next=start;   
         if(start != NULL)
             start->prev=temp;
         start=temp;
@@ -137,14 +137,14 @@ void deleteNode()
     cout << "\nEnter the position of the node to delete: ";
     cin >> pos;
 
-    if(pos == 1)   // deleting first node
+    if(pos == 1)  
     {
         temp = start;
         start = start->next;
         if(start != NULL)
             start->prev = NULL;
         else
-            tail = NULL;  // list became empty
+            tail = NULL; 
         free(temp);
     }
     else
@@ -161,7 +161,7 @@ void deleteNode()
                 if(ptr->next != NULL)
                     ptr->next->prev = ptr->prev;
                 else
-                    tail = ptr->prev; // deleted last node
+                    tail = ptr->prev;
                 free(temp);
                 break;
             }
