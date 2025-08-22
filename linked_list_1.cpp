@@ -59,7 +59,7 @@ int main()
 
         case 2: 
             btraverse();
-            break;
+             break;
     }
 }
 
