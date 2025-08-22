@@ -15,7 +15,7 @@ node *tail=NULL;
 
 void ftraverse();
 void btraverse();
-
+ 
 int main()
 {
     int i, n, item, ch;
